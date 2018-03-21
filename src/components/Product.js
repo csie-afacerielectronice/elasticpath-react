@@ -11,6 +11,7 @@ class Product extends Component {
                 <h3 className="product-title">{product.name}</h3>
                 <div className="product-description">{product.description}</div>
                 <div className="product-price">{product.meta.display_price.with_tax.formatted}</div>
+                <button onClick={() => {this.props.AddProduct(product.id, 1)}}>Add</button>
             </div>
         );
     }

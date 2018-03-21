@@ -8,7 +8,7 @@ class ProductsContainer extends Component {
             <div className="products">
                 <h2>Products</h2>
                 {this.props.products.map((product) => (
-                    <Product data={product} key={product.id}/>
+                    <Product data={product} key={product.id} AddProduct={this.props.AddProduct}/>
                 ))}
             </div>
         );

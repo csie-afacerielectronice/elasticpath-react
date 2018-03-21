@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Product from '../components/Product';
 
 class ProductsContainer extends Component {
     render() {
@@ -6,6 +7,9 @@ class ProductsContainer extends Component {
         return (
             <div className="products">
                 <h2>Products</h2>
+                {this.props.products.map((product) => (
+                    <Product data={product} key={product.id}/>
+                ))}
             </div>
         );
     }

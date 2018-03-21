@@ -32,3 +32,7 @@
   width: 20%;
   float: left;
 }
+
+.product-price {
+  text-align: right;
+}

@@ -27,6 +27,10 @@ class App extends Component {
     Moltin.Categories.All().then((response) => {
       this.setState({categories: response.data})
     })
+
+    Moltin.Products.With('main_images').All().then((response) => {
+      this.setState({products: response.data})
+    })
   }
 
   render() {

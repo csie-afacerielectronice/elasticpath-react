@@ -9,7 +9,7 @@ class CategoriesContainer extends Component {
                 <h2>Categories</h2>
                 <ul>
                     {this.props.categories.map(category => (
-                        <Category data={category}/>
+                        <Category data={category} key={category.id}/>
                     ))}                  
                 </ul>
             </div>
